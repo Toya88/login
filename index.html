@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+    <div class="bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="top-nav">
+                        <ul>
+                            <li><a href="#link">Home</a></li>
+                            <li><a href="#link">Services</a></li>
+                            <li><a href="#link">Pricing</a></li>
+                            <li><a href="#link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="login">
+                        <!-- create a popup account login -->
+                        <form class="login" action="" onsubmit="validate()"> 
+                            
+                            <label for="username">User Name (4 to 8 characters):</label>
+                            <input type="text" id="username" name="username"  minlength="4" maxlength="8" size="10" required>
+
+                            <label for="pass">PassWord</label>
+                            <input type="password" id="pass" name="password"  minlength="8" maxlength="20" size="10" required>
+
+                            <label for="pass">Re-enter Password</label>
+                            <input type="password" id="password" name="password"  minlength="8" maxlength="20"  size="10" required> 
+                            
+                            <input class="checkbox" type="checkbox" onclick="Toggle()"> <p>Show Password </p>
+                                
+
+                            <button type="submit">Login</button>
+                            <!-- onclick="validate() -->
+                                <p id="message"></p>
+                        </form>
+                        <!-- add show password -->
+                        <!-- <div class="directions">
+                            <ul>
+                                <li id="lenght">Password must have at least 8 characters but no more than 20 </li>
+                                <li id="special">Must contain at least one special charcter(!, @, #, $, %, &)</li>
+                                <li id="upper">Must contain at least one uppercase letter</li>
+                                <li id="lower">must contain at least one lowercase letter</li>
+                                <li id="number">Must contain at least one number</li>
+                                <li id="space">cannot contain spaces</li>
+                            </ul>
+                            
+                    </div> -->
+                </div>
+            </div>    
+                    
+                    
+            </div>
+           
+            </div><!-- /.row --> 
+        </div><!-- /.container -->   
+    </div><!-- /.bar -->
+<script src="js/app.js"></script>
+</body>
+</html>
